@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column is-half">
+        <h1 class="is-size-3 mt-3">Dashboard</h1>
+        <p class="is-size-5">Welcome to your dashboard:</p>
+        <div class="Dashboard">
+          <p><span class="fw-bold">Name:</span> {{ user.first_name }}</p>
+          <p><span class="fw-bold">Username:</span> {{ user.username }}</p>
+          <p><span class="fw-bold">Email:</span> {{ user.email }}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock %}
